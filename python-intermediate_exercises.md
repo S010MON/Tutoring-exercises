@@ -154,3 +154,4 @@ False example:
 >>> intersect(a, b, c, d)
 False
 ```
+
