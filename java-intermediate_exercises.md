@@ -170,12 +170,12 @@ public static  int roman2Decimal(String numeral)
 Assume that Roman Numerals are always in decending order for addition, (so VI = 5 + 1 = 5)  and in acending order for subtraction (so IV = 5 - 1 = 4) to make the numbers not included in the numerals list.
 
 Examples:
-```
-roman2Decimal("MI")
+```java
+roman2Decimal("MI");
 >>> 1001
-roman2Decimal("XIV")
+roman2Decimal("XIV");
 >>> 14
-roman2Decimal("MCMXCIV")
+roman2Decimal("MCMXCIV");
 >>> 1994
 ```
 
@@ -192,19 +192,21 @@ public static boolean intersect(Vector a, Vector b, Vector c, Vector d)
 
 Example output for the function:
 ```
->>> a = (10, 0)
->>> b = (10, 20)
->>> c = (0, 10)
->>> d = (30, 10)
->>> intersect(a, b, c, d)
-true
+a = (10, 0);
+b = (10, 20);
+c = (0, 10);
+d = (30, 10);
+intersect(a, b, c, d);
+
+>>> true
 ```
 False example:
 ```
->>> a = (0, 0)
->>> b = (0, 10)
->>> c = (10, 10)
->>> d = (30, 30)
->>> intersect(a, b, c, d)
-false
+a = (0, 0);
+b = (0, 10);
+c = (10, 10);
+d = (30, 30);
+intersect(a, b, c, d);
+
+>>> false
 ```
