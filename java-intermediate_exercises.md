@@ -52,9 +52,12 @@ Example output for the function:
 list1 = {1,3,4,7,9,18};
 list2 = {2,4,6,8,10};
 listOut = zip(list1, list2);
-System.out.println(listOut);
+for(int i: listOut)
+{
+   System.out.print(i + " ");
+}
 
->>> [1,2,3,4,4,6,7,8,9,10,18]           ## Note that numbers that appear in both lists are repeated
+>>> 1 2 3 4 4 6 7 8 9 10 18           ## Note that numbers that appear in both lists are repeated
 ```
 
 ## 3 Squared Distance
