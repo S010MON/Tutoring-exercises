@@ -29,7 +29,7 @@
 
 6) Write a function that takes in a number (n) and counts n
 ```python
-def count_to(n: int): -> None
+def count_to(n: int) -> None:
 ```
 example:
 ```python
@@ -43,7 +43,7 @@ example:
 
 7)  Write a function that takes in a string (s) and prints out each letter on a new line
 ```python
-def write_letters(s: int): -> None
+def write_letters(s: int) -> None:
 ```
 example:
 ```python
@@ -73,7 +73,7 @@ M must be greater than N!
 
 10) Write a function that, when given a list of integers l, returns the largest element
 ```python
-def max_element(l: list): -> int()
+def max_element(l: list) -> int:
 ```
 example:
 ```python
