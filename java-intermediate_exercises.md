@@ -41,7 +41,7 @@ Create a function `zip` that takes in two sorted arrays `list1` and `list2` and 
 
 Function definition should take the form:
 ```java
-public static int[] zip(int[] list1, int[] list_2)
+public static int[] zip(int[] list1, int[] list2)
 {
     // TODO your code here
 }
