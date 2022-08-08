@@ -49,9 +49,9 @@ public static int[] zip(int[] list1, int[] list2)
 
 Example output for the function:
 ```java
-list1 = {1,3,4,7,9,18};
-list2 = {2,4,6,8,10};
-listOut = zip(list1, list2);
+int[] list1 = {1,3,4,7,9,18};
+int[] list2 = {2,4,6,8,10};
+int[] listOut = zip(list1, list2);
 for(int i: listOut)
 {
    System.out.print(i + " ");
