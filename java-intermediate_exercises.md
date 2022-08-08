@@ -113,7 +113,7 @@ Example output for the function:
 ```java
 Vector point1 = new Vector(0, 10);
 Vector point2 = new Vector(0, 20);
-d = dist(point1, point2);
+double d = dist(point1, point2);
 System.out.println(d);
 
 >>> 10.0
@@ -122,7 +122,7 @@ Or for a more complex example
 ```java
 Vector point1 = new Vector(5, 10, 13);
 Vector point2 = new Vector(7, 20, 18);
-d = dist(point1, point2);
+double d = dist(point1, point2);
 System.out.println(d);
 
 >>> 11.3578
@@ -195,20 +195,20 @@ public static boolean intersect(Vector a, Vector b, Vector c, Vector d)
 
 Example output for the function:
 ```
-a = (10, 0);
-b = (10, 20);
-c = (0, 10);
-d = (30, 10);
+Vector a = (10, 0);
+Vector b = (10, 20);
+Vector c = (0, 10);
+Vector d = (30, 10);
 intersect(a, b, c, d);
 
 >>> true
 ```
 False example:
 ```
-a = (0, 0);
-b = (0, 10);
-c = (10, 10);
-d = (30, 30);
+Vector a = (0, 0);
+Vector b = (0, 10);
+Vector c = (10, 10);
+Vector d = (30, 30);
 intersect(a, b, c, d);
 
 >>> false
