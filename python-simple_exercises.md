@@ -43,7 +43,7 @@ example:
 
 7)  Write a function that takes in a string (s) and prints out each letter on a new line
 ```python
-def write_letters(s: int) -> None:
+def write_letters(s: str) -> None:
 ```
 example:
 ```python
