@@ -10,7 +10,7 @@
 Function definition should take the form:
 ```python
 def fizz_buzz(n: int) -> None:
-    # Your code here
+    pass # Your code here
 ```
 
 Example output for the function:
@@ -41,7 +41,7 @@ Create a function `zip` that takes in two sorted lists `list_1` and `list_2` and
 Function definition should take the form:
 ```python
 def zip(list_1, list_2) -> list:
-    # Your code here
+    pass # Your code here
 ```
 
 Example output for the function:
@@ -59,7 +59,7 @@ Create a function that takes in two points as tuples and returns the ![euclidean
 Function definition should take the form:
 ```python
 def dist(point_1: tuple, point_2: tuple) -> float:
-    # Your code here
+    pass # Your code here
 ```
 
 
@@ -82,6 +82,7 @@ Or for a more complex example
 Write a function that, given a string, checks whether the string is a palindrome (same forwards as backwards) and returns `True` or `False` if it is, or isn't, respectively.
 ```python
 def is_palindrome(s: str) -> bool:
+    pass # Your code here
 ```
 
 Example output for the function:
@@ -96,7 +97,29 @@ True
 True
 ```
 
-## 5 Roman Numerals
+## 5 Brackets
+Write a function that takes in a string and checks if any brackets within the string are both opened and closed in order.  Valid brackets are round `(`, `)` curly `{`, `}` and square `[`, `]`. If a bracket is opened, the next closing bracket must match it.  Nesting sets of brackets is possible.  For example a valid set of brackets is: `{} () (()) ({[]})`.  Invalid options are:  non-matching pairs i.e. `[)` or  closing brackets before opening brackets `][` `)(`.  All other characters and whitespace should be ignored.
+```python
+def valid_brackets(s: string) -> bool:
+    pass # Your code here
+```
+
+Example output for the function:
+```
+>>> valid_brackets("l=[1,2,3] print('hello world!') d={'foo':(1.0, 2.0)}")
+True
+
+>>> valid_brackets("l= 1,2,3]")            # missing opening bracket
+False
+
+>>> valid_brackets("print('hello world!")  # missing closing bracket
+False
+
+>>> valid_brackets("d={'foo':(1.0, 2.0))")   # missmatched bracket pair
+False
+```
+
+## 6 Roman Numerals
 Write a function that takes in a set of Roman Numerals as a string and outputs the correct Arabic number as an integer.  Use the following guide:
 
 ```
@@ -113,7 +136,7 @@ Symbol | Value
 And example function definition:
 ```python
 def rom_to_dec(roman: str) -> int:
-    # Your code here
+    pass # Your code here
 ```
 Assume that Roman Numerals are always in decending order for addition, (so VI = 5 + 1 = 5)  and in acending order for subtraction (so IV = 5 - 1 = 4) to make the numbers not included in the numerals list.
 
@@ -128,12 +151,12 @@ Examples:
 ```
 
 
-## 6 Line Intersection
+## 7 Line Intersection
 Write a function that takes in four tuples that represent coordinates on an x-y plane `(x1,y1),(x2,y2),(x3,y3),(x4,y4)` where the first two coordinates are the line A - B  and the second two are the line C - D.  Return a boolean value of `True` if the lines AB and CD intersect, and a `False` if they don't. _Hint: https://en.wikipedia.org/wiki/Line%E2%80%93line_intersection_
 
 ```python 
 def intersect(a, b, c, d) -> bool:
-   # Your code here
+    pass # Your code here
 ```
 
 Example output for the function:
