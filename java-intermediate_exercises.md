@@ -149,6 +149,33 @@ isPalindrome("a man a plan a canal panama");
 >>> true
 ```
 
+## 5 Brackets
+Write a method that takes in a string and checks if any brackets within the string are both opened and closed in order.  Valid brackets are round `(`, `)` curly `{`, `}` and square `[`, `]`. If a bracket is opened, the next closing bracket must match it.  Nesting sets of brackets are possible, for example a valid set of brackets is: `{} () (()) ({[]})`.  Invalid options are:  non-matching pairs i.e. `[)` or  closing brackets before opening brackets `][` `)(` or unclosed brackets `([{(`.  All other characters and whitespace should be ignored.
+```java
+public static boolen validBrackets(String s)
+{
+    // TODO Your code here
+}
+```
+
+Example output for the function:
+```java
+>>> valid_brackets("int[] list = {1, 2, 3, 4};  System.out.println(\"hello world!\");")
+True
+
+>>> valid_brackets("int[] list = 1, 2, 3, 4};")             # missing opening bracket
+False
+
+>>> valid_brackets("System.out.println(\"hello world!\" ")  # missing closing bracket
+False
+
+>>> valid_brackets("int[] list = {1, 2, 3, 4];")            # missmatched bracket pair
+False
+
+>>> valid_brackets("if(false == true")                      # unclosed bracket
+False
+```
+
 ## 5 Roman Numerals
 Write a function that takes in a set of Roman Numerals as a string and outputs the correct Arabic number as an integer.  Use the following guide:
 
