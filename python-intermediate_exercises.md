@@ -98,7 +98,7 @@ True
 ```
 
 ## 5 Brackets
-Write a function that takes in a string and checks if any brackets within the string are both opened and closed in order.  Valid brackets are round `(`, `)` curly `{`, `}` and square `[`, `]`. If a bracket is opened, the next closing bracket must match it.  Nesting sets of brackets is possible.  For example a valid set of brackets is: `{} () (()) ({[]})`.  Invalid options are:  non-matching pairs i.e. `[)` or  closing brackets before opening brackets `][` `)(`.  All other characters and whitespace should be ignored.
+Write a function that takes in a string and checks if any brackets within the string are both opened and closed in order.  Valid brackets are round `(`, `)` curly `{`, `}` and square `[`, `]`. If a bracket is opened, the next closing bracket must match it.  Nesting sets of brackets are possible, for example a valid set of brackets is: `{} () (()) ({[]})`.  Invalid options are:  non-matching pairs i.e. `[)` or  closing brackets before opening brackets `][` `)(` or unclosed brackets within the string `[([{`.  All other characters and whitespace should be ignored.
 ```python
 def valid_brackets(s: string) -> bool:
     pass # Your code here
@@ -109,13 +109,16 @@ Example output for the function:
 >>> valid_brackets("l=[1,2,3] print('hello world!') d={'foo':(1.0, 2.0)}")
 True
 
->>> valid_brackets("l= 1,2,3]")            # missing opening bracket
+>>> valid_brackets("l= 1,2,3]")             # missing opening bracket
 False
 
->>> valid_brackets("print('hello world!")  # missing closing bracket
+>>> valid_brackets("print('hello world!")   # missing closing bracket
 False
 
->>> valid_brackets("d={'foo':(1.0, 2.0))")   # missmatched bracket pair
+>>> valid_brackets("d={'foo':(1.0, 2.0))")  # missmatched bracket pair
+False
+
+>>> valid_brackets("l = [('foo','bar')")    # unclosed bracket
 False
 ```
 
