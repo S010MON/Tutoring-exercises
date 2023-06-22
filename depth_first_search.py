@@ -32,4 +32,4 @@ if __name__ == '__main__':
     root.children[2].insert(12)
     root.children[2].insert(13)
 
-    depth_first_search(root
+    depth_first_search(root)
